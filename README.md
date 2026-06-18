@@ -33,3 +33,10 @@ A BLE keyboard made in a buisness card form factor!
 |  13 |   1 | 32MHz                  | U25           | CRYSTAL-SMD_4P-L2.0-W1.6-BL       | 32MHz crystal                         | HY32MSMD2016EA1R30 | Huiyuan Crystal           | C7275072      | LCSC           | Crystals, Oscillators, Resonators: Crystals | Crystals, Oscillators, Resonators | Crystals                                     |         4 | LCSC catalog                | T     | SMT              | 2.0 × 1.6 mm 4-pad SMD crystal      |
 |  14 |   1 | ME6211C25M5G-N         | U27           | SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR | 2.5V fixed LDO, 400mA                 | ME6211C25M5G-N     | MICRONE                   | C194395       | LCSC           | Power Management PMIC: LDO Regulators       | Power Management PMIC             | Voltage Regulators - Linear, LDO             |         5 | LCSC catalog                | T     | SMT              | 2.5V output LDO                     |
 |  15 |   1 | PCB_USB_C_DS_2         | U28           | USB_TYPE_C_DS_2                   | PCB-embedded USB-C port               | On PCB             | PCB fabrication           | On PCB        | JLCPCB PCB fab | Connectors: USB-C                           | Connectors                        | PCB Edge / Embedded USB-C Connector          |        24 | **On PCB**                  | T     | SMT / PCB copper | No separate connector part required |
+
+
+## 3d renders-
+
+<img width="862" height="565" alt="image" src="https://github.com/user-attachments/assets/a639605b-ac50-48b4-b704-cec0cf73b6c8" />
+<img width="704" height="446" alt="image" src="https://github.com/user-attachments/assets/9569b200-b860-480e-97af-bb015ce2266e" />
+
