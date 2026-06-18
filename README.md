@@ -3,7 +3,7 @@ A BLE keyboard made in a buisness card form factor!
 
 ## Specs-
 
-- Close to a full 65% keyboard layout
+- 40% keyboard layout
 - USB-C port embedded inside the PCB
 - PCB antenna
 - BLE 5.3
