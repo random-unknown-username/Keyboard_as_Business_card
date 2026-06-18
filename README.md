@@ -1,1 +1,73 @@
-# Business_card
+# Business Card on Steroids
+
+A BLE (Bluetooth Low Energy) 40% keyboard built in a business card form factor.
+
+## Overview
+* **Author:** Satvik Hardat
+* **Form Factor:** Business Card
+* **Wireless Technology:** Bluetooth Low Energy (BLE) 5.3
+* **Keyboard Layout:** 40% layout
+* **USB Interface:** USB-C port embedded inside the PCB
+* **Antenna:** Custom PCB Trace Antenna
+
+## 3D Renders
+<p align="center">
+  <img width="862" height="565" alt="3D Render Front" src="https://github.com/user-attachments/assets/a639605b-ac50-48b4-b704-cec0cf73b6c8" /><br/>
+  <img width="704" height="446" alt="3D Render Back" src="https://github.com/user-attachments/assets/9569b200-b860-480e-97af-bb015ce2266e" />
+</p>
+
+---
+
+## Hardware Specifications
+
+- **Microcontroller:** WCH CH582M BLE RISC-V MCU (QFN-48)
+- **BLE version:** BLE 5.3 (via integrated BLE transceiver on CH582M)
+- **Power:** 2.5V fixed LDO Regulator (ME6211C25M5G-N)
+- **Oscillator:** 32MHz Crystal
+- **BOM Category:** SMT Components and PCB-embedded features
+
+### Schematic
+<p align="center">
+  <img width="846" height="570" alt="Schematic" src="https://github.com/user-attachments/assets/a7dbaf62-f5e0-4d76-a4a8-6804631a1524" />
+</p>
+
+### PCB Design
+<p align="center">
+  <img width="846" height="478" alt="PCB Front" src="https://github.com/user-attachments/assets/c0b904f7-bb0f-471d-af06-6a1ff65f98f8" /><br/>
+  <img width="846" height="478" alt="PCB Back" src="https://github.com/user-attachments/assets/8074dc9b-5b15-4b1b-8325-404bbe2d197d" />
+</p>
+
+---
+
+## Bill of Materials (BOM)
+
+| No. | Qty | Comment | Designator | Footprint | Value | Manufacturer Part | Manufacturer | Supplier Part | Supplier | Pin Count | Notes |
+|:---:|:---:|:---|:---|:---|:---|:---|:---|:---|:---|:---:|:---|
+| 1 | 1 | PCB antenna | ANT1 | pcb antenna | PCB antenna | On PCB | PCB fabrication | On PCB | JLCPCB PCB fab | 2 | No separate component required |
+| 2 | 3 | 2.2uF | C12, C17, C19 | C0603 | 2.2uF, 16V, X5R, ±10% | CL10A225KO8NNNC | Samsung Electro-Mechanics | C23630 | LCSC / JLCPCB | 2 | Exact 0603 2.2uF match |
+| 3 | 2 | 2.2uF | C15, C20 | C0402 | 2.2uF, 6.3V, X5R, ±20% | CL05A225MQ5NSNC | Samsung Electro-Mechanics | C12530 | LCSC / JLCPCB | 2 | Exact 0402 2.2uF match |
+| 4 | 1 | 100nF | C16 | C0402 | 100nF, 16V, X7R | CL05B104KO5NNNC | Samsung Electro-Mechanics | C1525 | LCSC / JLCPCB | 2 | Exact 0402 100nF match |
+| 5 | 1 | 100nF | C18 | C0603 | 100nF, 50V, X7R, ±10% | CC0603KRX7R9BB104 | YAGEO | C14663 | LCSC / JLCPCB | 2 | Exact 0603 100nF match |
+| 6 | 1 | DW127R-22-08-23 | H1 | HDR-TH_8P-P1.27-V-M-R2-C4-S1.27-1 | 8-pin, 1.27mm, 2x4P pin header | DW127R-22-08-23 | DEALON | C2935952 | LCSC | 8 | Through-hole dual-row 1.27mm header |
+| 7 | 1 | MH254RS-11-02-1000 | H2 | CONN-SMD_MH254RS-11-02-1000 | 2-pin, 2.54mm, right-angle SMD header | MH254RS-11-02-1000 | XFCN | C668122 | LCSC / JLCPCB | 2 | Right-angle 1x2P SMD header |
+| 8 | 1 | JUMPER 3-PAD-UNBRIDGED | JMP2 | PAD 3-JUMPER_GAP-1MM | 3-pad solder jumper | On PCB | PCB fabrication | On PCB | JLCPCB PCB fab | 3 | No separate component required |
+| 9 | 1 | 1uH | L2 | L0806 | 1uH, ±20%, 2A | LQM2MPN1R0MGHL | muRata | C528977 | LCSC | 2 | Exact 1uH Murata inductor |
+| 10 | 2 | 5.1K | R1, R2 | R0402 | 5.1kΩ, ±1%, 62.5mW | 0402WGF5101TCE | UNI-ROYAL | C25905 | LCSC / JLCPCB | 2 | USB-C CC pull-down resistor value |
+| 11 | 2 | 1M | R3, R4 | R0402 | 1MΩ, ±1%, 62.5mW | 0402WGF1004TCE | UNI-ROYAL | C26083 | LCSC / JLCPCB | 2 | Exact 0402 1M resistor match |
+| 12 | 1 | CH582M | U24 | QFN-48_L5.0-W5.0-P0.35-BL-EP | CH582M BLE RISC-V MCU | CH582M | WCH | C2920766 | LCSC / JLCPCB | 49 | QFN-48-EP, 48 pins + exposed pad |
+| 13 | 1 | 32MHz | U25 | CRYSTAL-SMD_4P-L2.0-W1.6-BL | 32MHz crystal | HY32MSMD2016EA1R30 | Huiyuan Crystal | C7275072 | LCSC | 4 | 2.0 × 1.6 mm 4-pad SMD crystal |
+| 14 | 1 | ME6211C25M5G-N | U27 | SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR | 2.5V fixed LDO, 400mA | ME6211C25M5G-N | MICRONE | C194395 | LCSC | 5 | 2.5V output LDO |
+| 15 | 1 | PCB_USB_C_DS_2 | U28 | USB_TYPE_C_DS_2 | PCB-embedded USB-C port | On PCB | PCB fabrication | On PCB | JLCPCB PCB fab | - | Integrated USB-C PCB trace footprint |
+
+---
+
+## Development Setup
+
+This project is configured for **MounRiver Studio** (MRS) using the WCH RISC-V compiler toolchain.
+
+### Importing the Project
+1. Open MounRiver Studio.
+2. Select **File -> Import**.
+3. Choose **General -> Existing Projects into Workspace**.
+4. Set the root directory to this repository's folder.
+5. Click **Finish**.

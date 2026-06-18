@@ -1,6 +1,6 @@
 Mcu Type=CH58x
 Address=0x00000000
-Target Path=obj/Business_card.hex
+Target Path=obj/Business_card_on_steroids.hex
 Erase All=true
 Program=true
 Verify=true
