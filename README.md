@@ -1,6 +1,7 @@
 # Business Card on Steroids
 
 A BLE (Bluetooth Low Energy) 40% keyboard built in a business card form factor.
+EASYEDA LINK FOR MACONDO REVIEWERS- https://u.easyeda.com/join?type=project&key=5767025385d97cd0458bbded1153cc49&inviter=3d0033e0d0a04fe88f26aec1c4ce7725
 
 ## Overview
 * **Author:** Satvik Hardat
